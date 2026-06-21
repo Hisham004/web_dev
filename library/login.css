@@ -1,0 +1,20 @@
+.form{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 75vh;
+    width: 70vh;
+    background-color: slategrey;
+
+}
+label{
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#login{
+    color: rgb(235, 212, 169);
+}
