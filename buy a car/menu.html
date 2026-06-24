@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        .container {
+        max-width: 1200px;   
+        margin: 0 auto;     
+        padding: 0 16px;     
+    }
         body{
-            font-family:sans-serif;
-            flex-wrap: wrap;
-            margin: 0px;
-        }
-        header{
-            height: 150px;
-            background-image:url(https://plus.unsplash.com/premium_photo-1658506634134-082a8eb0eff9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuciUyMGltYWdlcyUyMGZvciUyMHZlaGljbGUlMjBidXlpbmclMjB3ZWIlMjBwYWdlfGVufDB8fDB8fHww);
+            
+            background-image:url(https://images.pexels.com/photos/37138320/pexels-photo-37138320.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+
+            font-family:sans-serif;
+            
+           
+            justify-content: center;
+            align-items: center;
+
+        }
+        header{
+            height: 250px;
+            position: relative;
+            background-position: center;
             margin-top: 0px;
+            
+        }
+        
+        
+        .log{
+            position: absolute;
+            left:1430px;
+            top: 138px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 70px;
+            height: 25px;
+            font-variant: small-caps;
+        }
+        
+        .navi{
+             position: absolute;
+             top: 140px;         
+             right: 100px;
+             display: flex;
+             align-items: center;
+             gap: 30px;
+            
+        }
+        .links{
+            list-style: none;   
+            display: flex;      
+            gap: 25px;
+            padding-bottom: 100px;
+            margin: 0;
+            
+        }
+        .links li a{
+            text-decoration: none;
+            color: rgb(240, 236, 236);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight: 500;
+            font-variant: small-caps;
+            
+        } 
+        .category h1{
+            color: white;
+            font-style: oblique;
+            font-variant: small-caps;
+            font-stretch:expanded;
+            font-family:fantasy;
+            justify-content: center;
+            text-align: center;
         }
         .heading h2{
             color: rgb(166, 130, 163);
@@ -35,7 +97,15 @@
             text-align: center;
             padding-bottom: 200px;
         }
+        #vehicle{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
         .vehicles{
+            
             height: 200px;
             width: 190px;
             border: 2px;
@@ -52,6 +122,7 @@
             text-align: center;
             box-shadow: 4px 4px 8px black;
             
+            
         }
         .vehicles img{
             border: 2px;
@@ -59,7 +130,8 @@
             border-style: solid;
             border-radius: 5px;
             object-fit: cover;
-            margin-bottom: 1px;
+            margin-bottom: 0px;
+            margin-top: 20px;
             align-items: center;
         }
         .vehicles h2{
@@ -69,45 +141,218 @@
             margin-bottom: 1px;
         }
         .vehicles button{
+            border: 2px;
+            border-color: rgb(251, 247, 247);
+            border-style: solid;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .spare h1{
+            color: white;
+            font-style: oblique;
+            font-variant: small-caps;
+            font-stretch:expanded;
+            font-family:fantasy;
+            justify-content: center;
+            text-align: center;
+        }
+        #spare{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .parts{
+            height: 200px;
+            width: 190px;
+            border: 2px;
+            border-color: rgb(15, 15, 15);
+            border-radius: 10px;
+            border-style: solid;
 
+            background-color: rgb(142, 167, 139);
+            
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+            
+            text-align: center;
+            box-shadow: 4px 4px 8px black;
+            
+            
+        }
+        .parts img{
+            border: 2px;
+            border-color: white;
+            border-style: solid;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            align-items: center;
+        }
+        .parts h2{
+            font-variant: small-caps;
+            font-stretch:expanded;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 1px;
+        }
+        .parts button{
+            border: 2px;
+            border-color: rgb(251, 247, 247);
+            border-style: solid;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .rev h1{
+            color: white;
+            font-style: oblique;
+            font-variant: small-caps;
+            font-stretch:expanded;
+            font-family:fantasy;
+            justify-content: center;
+            text-align: center;
+        }
+        .reviews h2{
+            color: white;
+            padding-left: 330px;
+        }
+        .reviews p{
+            color: white;
+            padding-left: 330px;
+        }
+        #contact{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        #contact i{
+            padding-left: 50px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="heading"> 
-            <div class="navi">
-                <nav>
-                    <ul>
-
-                    </ul>
-                </nav>
-            </div>
-            <h2>Start Your Journey Here</h2>
-            <p>From powerful machines to stylish rides <br>find the vehicle that matches your passion. Browse, compare, and buy with just a few clicks.</p>
+            <h2>Start Your Journey Here</h2>  
+            <nav class="navi">
+                <ul class="links">
+                    <li><a href="#vehicle">vehicle categories</a></li>
+                    <li><a href="#spare">vehicle spare parts</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> 
+            <button class="log"><a href="login.html">login</a></button>
+            <p>From powerful machines to stylish rides <br>find the vehicle that matches your passion. Browse, compare, and buy with just a few clicks.</p>  
         </div>
     </header>
-
     <main>
-        <section id="vehicle">
-            <div class="vehicles">
-                <img src="https://images.pexels.com/photos/13023825/pexels-photo-13023825.jpeg" height="100px" width="150px">
-                <h2>bikes</h2>
-                <button><a href="bike.html">view more</a></button>
-            </div>
+        <div class="category">
+            <h1>vehicle categories</h1>
+            <section id="vehicle">
+                
+                <div class="vehicles">
+                    <img src="https://images.pexels.com/photos/13023825/pexels-photo-13023825.jpeg" height="100px" width="150px">
+                    <h2 font-size: 20px;>bikes</h2>
+                    <button><a href="bike.html">view more</a></button>
+                </div>
 
-            <div class="vehicles">
-                <img src="https://images.pexels.com/photos/37264153/pexels-photo-37264153.jpeg" height="100px" width="150px">
-                <h2>cars</h2>
-                <button><a href="car.html">view more</a></button>
-            </div>
+                <div class="vehicles">
+                    <img src="https://images.pexels.com/photos/37264153/pexels-photo-37264153.jpeg" height="100px" width="150px">
+                    <h2 font-size: 20px;>cars</h2>
+                    <button><a href="car.html">view more</a></button>
+                </div>
 
-            <div class="vehicles">
-                <img src="https://images.pexels.com/photos/31361166/pexels-photo-31361166.jpeg" height="100px" width="150px">
-                <h2>heavy vehicles</h2>
-                <button><a href="others.html">view more</a></button>
-            </div>
-        </section>
+                <div class="vehicles">
+                    <img src="https://images.pexels.com/photos/31361166/pexels-photo-31361166.jpeg" height="100px" width="150px">
+                    <h2 style="font-size: 20px;">heavy vehicles</h2>
+                    <button><a href="others.html">view more</a></button>
+                </div>
+
+                <div class="vehicles">
+                    <img src="https://images.pexels.com/photos/10554309/pexels-photo-10554309.jpeg" height="100px" width="150px">
+                    <h2 style="font-size: 20px;">taxi vehicles</h2>
+                    <button><a href="taxi.html">view more</a></button>
+                </div>
+            </section>
+        </div>
+        <div class="spare">
+            <h1>vehicle spare parts</h1>
+            <section id="spare">
+                
+                <div class="parts">
+                    <img src="https://images.pexels.com/photos/11890959/pexels-photo-11890959.jpeg" height="100px" width="150px">
+                    <h2>bikes</h2>
+                    <button><a href="bike.html">view more</a></button>
+                </div>
+
+                <div class="parts">
+                    <img src="https://images.pexels.com/photos/34917467/pexels-photo-34917467.jpeg" height="100px" width="150px">
+                    <h2>cars</h2>
+                    <button><a href="car.html">view more</a></button>
+                </div>
+
+                <div class="parts">
+                    <img src="https://images.pexels.com/photos/7541351/pexels-photo-7541351.jpeg" height="100px" width="150px">
+                    <h2 style="font-size: 20px;">heavy vehicles</h2>
+                    <button><a href="others.html">view more</a></button>
+                </div>
+
+                <div class="parts">
+                    <img src="https://images.pexels.com/photos/10554309/pexels-photo-10554309.jpeg" height="100px" width="150px">
+                    <h2 style="font-size: 18px;">other accessories</h2>
+                    <button><a href="taxi.html">view more</a></button>
+                </div>
+            </section>
+        </div>
+        <div class="rev">
+            <h1>reviews</h1>
+            <section id="review">
+                
+                <div class="reviews">
+                    <h2 style="font-size: 19px;">Hisham</h2>
+                    <p>“Excellent platform for vehicle accessories!”<br>
+                        I found everything I needed in one place from seat covers to premium car care products. <br> The website is easy to navigate and delivery was super fast. Highly recommended!</p>
+                </div>
+                <div class="reviews">
+                    <h2 style="font-size: 19px;">Sanish</h2>
+                    <p>“Best quality at reasonable prices” <br>
+                        The product quality exceeded my expectations. <br> Clear descriptions, genuine accessories, and smooth checkout experience. Definitely coming back again.</p>
+                </div>
+                <div class="reviews">
+                    <h2 style="font-size: 19px;">Anitha</h2>
+                    <p>“User-friendly and trustworthy” <br>
+                        The website layout is clean and simple. <br>Ordering was hassle-free, and customer support was very responsive. Great experience overall.</p>
+                </div>
+                <div class="reviews">
+                    <h2 style="font-size: 19px;">Devika</h2>
+                    <p>“Wide variety of vehicle products” <br>
+                        From bikes to cars, this site has a great collection of accessories. <br>Prices are competitive and products arrived well-packed.</p>
+                </div>
+                <div class="reviews">
+                    <h2 style="font-size: 19px;">George</h2>
+                    <p>Perfect for vehicle lovers” <br>
+                        This website is a one-stop shop for vehicle accessories. <br>Genuine products, attractive offers, and quick delivery. Loved the experience!</p>
+                </div>
+            </section>
+        </div>
+        <div class="rev">
+            <h1>contact us </h1>
+            <section id="contact">
+                <i class="fa-solid fa-phone"></i> Call  
+                <i class="fa-brands fa-instagram"></i> Instagram  
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp  
+                <i class="fa-solid fa-location-dot"></i> Location
+            </section>
+        </div>
+        
     </main>
 </body>
 </html>
