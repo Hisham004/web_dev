@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .input{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-left: 25%;
+        }
+        form{
+            height: 75vh;
+            width: 100vh;
+            background-image: url(https://images.pexels.com/photos/10554313/pexels-photo-10554313.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+
+            border: 2px;
+            border-color: black;
+            border-radius: 10px;
+
+            padding-top: 10px;
+            
+        }
+       
+        h1{
+            color: white;
+            font-style: italic;
+            text-align: center;
+            padding-top: 60px;
+        }
+        .input label{
+            width: 90px;
+            color: white;
+        }
+        .input input{
+            border-style: solid;
+            border-color: white;
+            border-radius: 5px;
+        }
+        button{
+            text-align: center;
+            align-items: center;
+            margin-left: 250px;
+            border: 2px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>   
+        <form action="">
+            <div class="all">
+                <h1 id="login">Login Here</h1>
+                <div class="input">  
+                    <label>Name <sup>*</sup></label>
+                    <input placeholder="Enter Your name" type="text"><br><br>
+                </div>
+                <div class="input">  
+                    <label >Mobile No. <sp>*</sp></label>
+                    <input placeholder="Enter Your Mobile Number" type="tel"><br><br>
+                </div>
+                <div class="input">      
+                    <label >Email <sp>*</sp></label>
+                    <input placeholder="Enter Your Email" type="email"><br><br>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+        </form>    
+    
+</body>
+</html>
